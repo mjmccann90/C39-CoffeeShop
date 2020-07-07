@@ -31,6 +31,13 @@ namespace C39_CoffeeShop
         {
             if (env.IsDevelopment())
             {
+                // Do not block requests while in development
+                app.UseCors(options =>
+                {
+                    options.AllowAnyOrigin();
+                    options.AllowAnyMethod();
+                    options.AllowAnyHeader();
+                });
                 app.UseDeveloperExceptionPage();
             }
             else

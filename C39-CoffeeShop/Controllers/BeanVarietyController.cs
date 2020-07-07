@@ -4,7 +4,12 @@ using CoffeeShop.Models;
 using CoffeeShop.Repositories;
 
 
+//One key difference is a Web API controller uses all the familiar HTTP verbs that json-server used.
 
+//GET for retrieving one or more entities
+//POST for creating a new entity
+//PUT for updating an entity
+//DELETE for removing an entity
 
 namespace CoffeeShop.Controllers
 {
